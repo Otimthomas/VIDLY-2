@@ -31,3 +31,14 @@ http://localhost:3000/api/customers POST: This URL will create a new customer
 http://localhost:3000/api/customers/:id DELETE: This URL will delete an existing customer
 
 http://localhost:3000/api/customers/:id PUT: This URL will update a customer with the specified id
+
+Movies:
+http://localhost:3000/api/movies GET: This URL will return all the movies in the database
+
+http://localhost:3000/api/movies/:id GET: This URL will return a particular movie in the database
+
+http://localhost:3000/api/movies POST: This URL will create a new movie that belongs to an already existing genreId
+
+http://localhost:3000/api/movies/:id DELETE: This URL will delete an existing movie
+
+http://localhost:3000/api/movies/:id PUT: This URL will update a movie with the specified id

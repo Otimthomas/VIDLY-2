@@ -34,13 +34,18 @@ router.put("/:id", async (req, res) => {
 
   const genre = await Genre.findByIdAndUpdate(
     req.params.id,
-    { name: req.body.name },
+    {
+      $set: {
+        name: req.body.name
+      }
+    },
     {
       new: true
     }
   );
 
-  if (!genre) return res.status(404).send("A genre with the ID was not found");
+  if (!genre) return res.status(404).send("A genre with that ID does not exit");
+
   res.send(genre);
 });
 
