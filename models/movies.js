@@ -19,12 +19,12 @@ const Movie = mongoose.model(
     numberInStock: {
       type: Number,
       required: true,
-      minlength: 0
+      min: 0
     },
     dailyRentalRate: {
       type: Number,
       required: true,
-      minlength: 0
+      min: 0
     }
   })
 );
