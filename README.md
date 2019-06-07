@@ -1,8 +1,7 @@
 # VIDLY-2
 
 A RESTful API that performs CRUD operation that is create, read, update and delete from a mongo database.
-This application has two resources, the genres and the customers api.
-This is a CRUD RESTful API that can create a genre/customer, retrieve a genre/genres/customer/customers, update a genre/customer, and delete a genre/customer from the genre/customer collection in the vidly database.(Video store).
+This application has four resources, the genres and the customers, movies and rentals api.
 
 SETUP
 Install all the dependencies in the package.json
@@ -42,3 +41,10 @@ http://localhost:3000/api/movies POST: This URL will create a new movie that bel
 http://localhost:3000/api/movies/:id DELETE: This URL will delete an existing movie
 
 http://localhost:3000/api/movies/:id PUT: This URL will update a movie with the specified id
+
+Rentals:
+http://localhost:3000/api/rentals GET: This URL will return all the rentals in the database
+
+http://localhost:3000/api/rentals/:id GET: This URL will return a particular rental in the database
+
+http://localhost:3000/api/movies POST: This URL will create a new rental using the customerId and movieId
